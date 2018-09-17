@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<!-- ########################################  INICIO HEAD -->
+	<head>
+		<title>Pokeshop</title>
+
+
+
+
+
+		<!-- Meta info-->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<!-- Plug-in -->
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="estilos.css">
+
+		<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Unkempt:400,700' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Poor+Story" rel="stylesheet">
+		<!-- Estilos -->
+		<style type="text/css">
+		</style>
+	</head>
+
+
+	<!-- ##########################INICIO BODYY -->
+	<body class="fondoPKMNimg">
+		<header class=" row justify-content-center ">
+			<!--<div class="container btn-danger"> -->
+				<nav class="container row navbar navbar-default "> <!--justify-content-between navbar navbar-default-->
+					<div class="col-3">
+						<h1 style="font-family:'Poor Story'">PokeShop</h1>
+					</div>
+
+					<div class="col-4">
+						<!-- button -->
+						<div class="input-group mb-0">
+                    		<input type="text" class="form-control" placeholder="Buscar Pokemon">
+                    		<div class="input-group-append">
+                    			<button type="submit" class="boton02"><img src="IMAGENES/lupa.png"></button>
+                    		</div>
+                     	</div>
+					</div>
+
+					<div class="col-3 ">
+						<img alt="hai" src="01imgpastel.jpg" height="50px" width="50px">
+						<span><a href="" class="textoUsuario">Hola, usuario</a></span>
+					</div>
+
+					<div class="col-2">
+						<button type="submit" class="boton02" onclick="document.getElementById('id01').style.display='block'">Log In</button>
+					</div>
+
+				</nav>
+			<!-- </div> -->
+		</header>
+
+
+
+<div class="container">
+<section class="main row"> <!-- PRIMERA FILA -->
+	
+	<!-- <aside class="col-sm-4 col-md-3 ">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+	</aside> -->
+
+	<article class="col-sm-8 col-md-12 ">	
+<!--  &&&&&&&&&&&&&&&&&&&&&&   VISOR DE IMAGENES &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& -->
+		<div class="row">
+			<div class="col d-flex justify-content-center">
+				<img alt="kirb" src="IMAGENES/portada2.jpg" height="500px" width="1050px">
+			</div>
+		</div>
+		<br>
+		<nav class="row justify-content-center">
+			<div class="col-10 d-flex justify-content-center">
+				<ul class="nav nav-pills">
+			  	<li role="presentation" class="boton01"><a href="#" class="textoBoton">1ra Generacion</a></li>
+			  	<li role="presentation" class="boton01"><a href="#" class="textoBoton">2da Generacion</a></li>
+			  	<li role="presentation" class="boton01"><a href="#" class="textoBoton">3ra Generacion</a></li>
+
+			 
+			  	<li role="presentation" class="boton01">
+			  		
+			  		
+		    		<a id="poke-drop" class="dropdown-toggle textoBoton" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+		      			Tipo de Pokemon <span class="caret"></span>
+		    		</a>
+		    		<div class="dropdown-menu" aria-labelledby="poke-drop">
+			      		<a class="dropdown-item">Acero</a>
+			      		<a class="dropdown-item">Agua</a>
+			      		<a class="dropdown-item">Electrico</a>
+			      		<a class="dropdown-item">Fantasma</a>
+			      		<a class="dropdown-item">Fuego</a>
+			      		<a class="dropdown-item">Hielo</a>
+			      		<a class="dropdown-item">Planta</a>
+			      		<a class="dropdown-item">Psiquico</a>
+			      		<a class="dropdown-item">Roca</a>
+			      		<a class="dropdown-item">Siniestro</a>
+			      		<a class="dropdown-item">Tierra</a>
+		    		</div>
+		    	
+		  		</li>
+			</ul>
+			</div>
+			 
+			<!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ BOTONES DE CATEGORIAS ^^^^^^^^^^^^^^^^^^^6 -->
+				
+		  	
+		</nav>
+	</article>
+
+	
+</section>
+
+<!-- ######################################################################ARTICULOS EN VENTA -->
+
+<div class="row">
+    <div class="col-md-12 main">
+    	<br>
+       <h1 class="textoTitulo">Los mas vendidos</h1> 
+       <hr>
+    </div>
+<div class="row">
+
+  <div class="fondoArticulos col-sm-6 col-md-3">
+      <img src="IMAGENES/pikachu.jpg" height="100px" width="230px >
+      <div class="caption">
+        <h4 style="color:#a9a126;">Pikachu</h4>
+        <p class="textoDescripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        <p><a href="#" class="btn btn-success" role="button">Agregar</a> <a href="#" class="btn btn-light" role="button">Detalles</a></p>
+    </div>
+
+<div class="fondoArticulos col-sm-6 col-md-3">
+      <img src="IMAGENES/articuno.jpg" height="100px" width="230px >
+      <div class="caption">
+        <h4 style="color:#a9a126;">Articuno</h4>
+        <p class="textoDescripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p><a href="#" class="btn btn-success" role="button">Agregar</a> <a href="#" class="btn btn-light" role="button">Detalles</a></p>
+
+    </div>
+
+<div class="fondoArticulos col-sm-6 col-md-3">
+      <img src="IMAGENES/chikorita.jpg" height="100px" width="230px >
+      <div class="caption">
+        <h4 style="color:#a9a126;">Chikorita</h4>
+        <p class="textoDescripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        <p><a href="#" class="btn btn-success" role="button">Agregar</a> <a href="#" class="btn btn-light" role="button">Detalles</a></p>
+    </div>
+
+    <div class="fondoArticulos col-sm-6 col-md-3">
+      <img src="IMAGENES/machop.jpg" height="100px" width="230px >
+      <div class="caption">
+        <h4 style="color:#a9a126;">Machop</h4>
+        <p class="textoDescripcion" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        <p><a href="#" class="btn btn-success" role="button">Agregar</a> <a href="#" class="btn btn-light" role="button">Detalles</a></p>
+    </div>
+</div>
+</div>
+
+
+<!-- NOVEDADES POKESHOP -->
+
+<div class="row">
+    <div class="col-md-12 main">
+    	<br>
+       <h1 class="textoTitulo">Novedades Pokeshop</h1> 
+       <hr>
+    </div>
+<div class="row">
+
+  <div class="fondoArticulos col-sm-6 col-md-3">
+      <img src="IMAGENES/pikachu.jpg" height="100px" width="230px >
+      <div class="caption">
+        <h4 style="color:#a9a126;">Pikachu</h4>
+        <p class="textoDescripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        <p><a href="#" class="btn btn-success" role="button">Agregar</a> <a href="#" class="btn btn-light" role="button">Detalles</a></p>
+    </div>
+
+<div class="fondoArticulos col-sm-6 col-md-3">
+      <img src="IMAGENES/articuno.jpg" height="100px" width="230px >
+      <div class="caption">
+        <h4 style="color:#a9a126;">Articuno</h4>
+        <p class="textoDescripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p><a href="#" class="btn btn-success" role="button">Agregar</a> <a href="#" class="btn btn-light" role="button">Detalles</a></p>
+
+    </div>
+
+<div class="fondoArticulos col-sm-6 col-md-3">
+      <img src="IMAGENES/chikorita.jpg" height="100px" width="230px >
+      <div class="caption">
+        <h4 style="color:#a9a126;">Chikorita</h4>
+        <p class="textoDescripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        <p><a href="#" class="btn btn-success" role="button">Agregar</a> <a href="#" class="btn btn-light" role="button">Detalles</a></p>
+    </div>
+
+    <div class="fondoArticulos col-sm-6 col-md-3">
+      <img src="IMAGENES/machop.jpg" height="100px" width="230px >
+      <div class="caption">
+        <h4 style="color:#a9a126;">Machop</h4>
+        <p class="textoDescripcion" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        <p><a href="#" class="btn btn-success" role="button">Agregar</a> <a href="#" class="btn btn-light" role="button">Detalles</a></p>
+    </div>
+</div>
+</div>
+<!-- FIN NOVEDADES -->
+
+<hr>
+<footer>
+<div class="row footer">
+    <!--  <div class="color1 col-md-3"> <a href="#" class="list-group-item active">
+    Cras justo odio
+  </a>
+  <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+  <a href="#" class="list-group-item">Morbi leo risus</a>
+  <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+  <a href="#" class="list-group-item">Vestibulum at eros</a>
+      </div> -->
+
+      <div class="col-md-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </div>
+
+
+</div>
+
+</footer>
+
+</div> <!-- FIN PRIMERA FILA -->
+
+
+
+
+<!-- Button to open the modal login form -->
+
+<!-- The Modal -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" 
+class="close" title="Close Modal">&times;</span>
+
+  <!-- Modal Content -->
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+
+</div>
+
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+<!-- JAVA SCRIPT -->
+		<script type="text/javascript" src="Jquery/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="Jquery/popper.min.js"></script>
+		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+		
+	</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Agregar Articulo</title>
+
+		<!-- Meta info-->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+		<!-- Plug-in -->
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="estilos.css">
+        <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Unkempt:400,700' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Poor+Story" rel="stylesheet">
+		<!-- Estilos -->
+		<style type="text/css">
+		</style>
+	</head>
+	<body class="fondoPKMNimg">
+<header class=" row justify-content-center ">
+			<!--<div class="container btn-danger"> -->
+				<nav class="container row navbar navbar-default "> <!--justify-content-between navbar navbar-default-->
+					<div class="col-3">
+						<h1 style="font-family:'Poor Story'">PokeShop</h1>
+					</div>
+
+					<div class="col-4">
+						<!-- button -->
+						<div class="input-group mb-0">
+                    		<input type="text" class="form-control" placeholder="Buscar Pokemon">
+                    		<div class="input-group-append">
+                    			<button type="submit" class="boton02"><img src="IMAGENES/lupa.png"></button>
+                    		</div>
+                     	</div>
+					</div>
+
+					<div class="col-3 ">
+						<img alt="hai" src="01imgpastel.jpg" height="50px" width="50px">
+						<span><a href="" class="textoUsuario">Hola, usuario</a></span>
+					</div>
+
+					<div class="col-2">
+						<button type="submit" class="boton02" onclick="document.getElementById('id01').style.display='block'">Log In</button>
+					</div>
+
+				</nav>
+			<!-- </div> -->
+		</header>
+
+
+
+<div class="container">
+     <div class="row">
+
+         <div class="mainRegistroL col-sm-6 col-md-8">
+
+         	<h3 class="textoTitulo">Agregar un nuevo Pokemon</h3>
+
+<form action="resultado.html" target="_blank">
+
+  <fieldset>
+
+    <legend>Información básica</legend>
+
+    <p><label>Nombre <input type="text" name="nombrepokemon" minlength="1" maxlength="30" required></label></p>
+    <p><label>Mote <input type="text" name="mote" minlength="1" maxlength="30" required></label></p>
+    <p><label>Precio de venta <input type="text" name="precio" minlength="1" maxlength="20" required></label></p>
+<div class="form-group">
+    <label for="exampleFormControlFile1">Seleccione una imagen</label>
+    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+  </div>
+
+  <div class="form-group">
+    <label for="exampleFormControlFile1">Seleccione un video</label>
+    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+  </div>
+
+    <p><label>Fecha de nacimiento: <input type="date" name="fechadenacimiento"></label></p>
+
+    <p>Genero:
+
+      <label><input type="radio" name="genero" value="masculino"> Masculino</label>
+
+      <label><input type="radio" name="genero" value="femenino"> Femenino</label>
+    </p>
+
+<p>Tipo de pokemon</p>
+<select class="form-control form-control-sm">
+  <option>Acero</option>
+  <option>Agua</option>
+  <option>Electrico</option>
+  <option>Fantasma</option>
+  <option>Fuego</option>
+  <option>Hielo</option>
+  <option>Planta</option>
+  <option>Psiquico</option>
+  <option>Roca</option>
+  <option>Siniestro</option>
+  <option>Tierra</option>
+</select>
+
+
+<p>Descripcion</p>
+     <p><textarea name="mensaje" cols="100" rows="3" minlength="10" maxlength="250" placeholder="Escribe un mensaje" required></textarea></p>
+  </fieldset>
+
+
+
+  <p>
+
+    <input type="submit" value="Enviar datos">
+
+    <input type="reset" value="Restaurar formulario">
+
+  </p>
+
+</form>
+      
+          </div>
+
+         <div class="mainRegistroC col-sm- col-md-4">
+
+          </div>
+
+           
+     </div>
+
+     <hr>
+<footer>
+<div class="row footer">
+    <!--  <div class="color1 col-md-3"> <a href="#" class="list-group-item active">
+    Cras justo odio
+  </a>
+  <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+  <a href="#" class="list-group-item">Morbi leo risus</a>
+  <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+  <a href="#" class="list-group-item">Vestibulum at eros</a>
+      </div> -->
+
+      <div class="col-md-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </div>
+
+
+</div>
+
+</footer>
+
+
+</div> <!-- fin del contenedor -->
+
+
+ <!-- Button to open the modal login form -->
+
+<!-- The Modal -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" 
+class="close" title="Close Modal">&times;</span>
+
+  <!-- Modal Content -->
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <img src="01imgpastel.jpg" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+
+</div>
+
+
+
+
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+</div>
+
+
+		<script type="text/javascript" src="Jquery/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="Jquery/popper.min.js"></script>
+		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+		
+	</body>
+</html>
